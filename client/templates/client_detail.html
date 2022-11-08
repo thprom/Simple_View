@@ -1,0 +1,10 @@
+{% include 'base.html' %}
+{% block page-content %}
+<h1>This is the details of client {{client.first_name}} {{client.last_name}}</h1>
+Username: {{client.username}}<br>
+Email: {{client.email}}<br>
+Phone: {{client.phone}}<br>
+Address: {{client.address}}<br>
+<br>
+<BUTTON><a href='{% url "clients" %}' style="text-decoration:none">Return</a></BUTTON>
+{% endblock %}
