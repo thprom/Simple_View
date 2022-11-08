@@ -1,0 +1,8 @@
+{% include 'base.html' %}
+{% block page-content %}
+<h1>This is the clients page</h1>
+{% for client in clients %}
+{{client.first_name}} {{client.last_name}} <br>
+{{client.address}} {{client.phone}} {{client.email}} <br>
+{% endfor %}
+{% endblock %}
